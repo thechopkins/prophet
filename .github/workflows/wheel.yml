@@ -58,7 +58,7 @@ jobs:
       - name: "Upload wheel as artifact"
         uses: actions/upload-artifact@v3
         with:
-          name: artifact-${{ matrix.os }}-${{ matric.cibw_archs }}-wheel
+          name: artifact-${{ matrix.os }}-${{ matrix.cibw_archs }}-wheel
           path: "./**/*.whl"
 
   make-sdist:
